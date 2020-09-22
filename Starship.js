@@ -21,7 +21,6 @@ export default function StarShip({ route, navigation }) {
 
   const getStarship = async () => {
     const { url } = route.params;
-    console.log(url);
     const result = await axios.get(url);
     setStarship({
       model: result.data.model,
